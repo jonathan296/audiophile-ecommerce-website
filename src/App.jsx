@@ -23,25 +23,32 @@ function App() {
       }
 
   return (
-    <div className='bg-gray-100'>
+    <div className='bg-gray-100 '>
         
-        <div className='bg-[#101010] h-[729px] px-[165px] gap-6 flex justify-start mb-9 text-neutral-700'>
-          
-          
-          <Link to='/'><h1 className='text-2xl uppercase font-bold'>Home</h1></Link>
-          
-          <Link to='/login'className='text-2xl uppercase font-bold'>log in</Link>
-          <Link to='/login'className='text-2xl uppercase font-bold'>log in</Link>
-          <Link to='/login'className='text-2xl uppercase font-bold'>log in</Link>
-          <Link to='/login'className='text-2xl uppercase font-bold'>log in</Link>
+        <div className='bg-[#101010] h-[729px] px-[165px] py-[32px] gap-6 flex flex-col justify-between mb-9 text-neutral-700'>
+          <div className='flex'>
+            <div>
+            audiophile
+            </div>
+            <div>
+            <Link to='/'className='text-2xl uppercase font-bold'>Home</Link>
+            <Link to='/login'className='text-2xl uppercase font-bold'>log in</Link>
+            <Link to='/login'className='text-2xl uppercase font-bold'>log in</Link>
+            <Link to='/login'className='text-2xl uppercase font-bold'>log in</Link>
+            <Link to='/login'className='text-2xl uppercase font-bold'>log in</Link>
+            </div>
 
-          <div>
-            {!showModal && <button className=' bg-gray-800 text-white text-xs font-bold uppercase  hover:bg-gray-700 focus:outline-none focus:bg-gray-700'
-          onClick={toggle}>
-          Cart ({cartItems.length})</button>}
+            <div>
+              {!showModal && <button className=' bg-gray-800 text-white text-xs font-bold uppercase  hover:bg-gray-700 focus:outline-none focus:bg-gray-700'
+            onClick={toggle}>
+            Cart ({cartItems.length})</button>}
+            </div>
           </div>
+          <hr className="border-t-2 border-red-500 my-4" />
+          
           
         </div>
+       
         <div>
           <Routes>
             <Route path='/details/:id' element={<Details/>}/>
