@@ -24,16 +24,23 @@ function App() {
 
   return (
     <div className='bg-gray-100'>
-      
-        <div className='bg-gray-500 gap-6 flex justify-start items-center px-20 py-1 mb-9 mx-10 text-neutral-900 shadow-md rounded-b-lg'>
-          <img src={icon}></img>
+        
+        <div className='bg-[#101010] h-[729px] px-[165px] gap-6 flex justify-start mb-9 text-neutral-700'>
           
-          <Link to='/'><h1 className='text-2xl uppercase font-bold mt-10 text-center mb-10'>Home</h1></Link>
           
-          <Link to='/login'className='text-2xl uppercase font-bold mt-10 mb-10 m-b'>log in</Link>
-          {!showModal && <button className='ml-auto px-4 py-2 bg-gray-800 text-white text-xs font-bold uppercase rounded hover:bg-gray-700 focus:outline-none focus:bg-gray-700'
+          <Link to='/'><h1 className='text-2xl uppercase font-bold'>Home</h1></Link>
+          
+          <Link to='/login'className='text-2xl uppercase font-bold'>log in</Link>
+          <Link to='/login'className='text-2xl uppercase font-bold'>log in</Link>
+          <Link to='/login'className='text-2xl uppercase font-bold'>log in</Link>
+          <Link to='/login'className='text-2xl uppercase font-bold'>log in</Link>
+
+          <div>
+            {!showModal && <button className=' bg-gray-800 text-white text-xs font-bold uppercase  hover:bg-gray-700 focus:outline-none focus:bg-gray-700'
           onClick={toggle}>
           Cart ({cartItems.length})</button>}
+          </div>
+          
         </div>
         <div>
           <Routes>
