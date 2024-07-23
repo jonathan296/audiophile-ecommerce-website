@@ -25,12 +25,12 @@ function App() {
   return (
     <div className='bg-gray-100 '>
         
-        <div className=' bg-[#141414] h-[729px] px-[165px] pt-[32px] flex flex-col  text-[#FFFFFF]'>
-          <div className='flex justify-between items-center mb-[36px]'>
+        <div className='relative bg-[#191919]  h-[729px] px-[165px] pt-[32px] flex flex-col  text-[#FFFFFF]'>
+          <div className=' z-10 flex justify-between items-center mb-[36px]'>
             <div>
             <img src='src\assets\shared\desktop\logo.svg'></img>
             </div>
-            <div className='flex gap-[34px] uppercase manrope leading-[25px] font-bold tracking-[2px] text-[13px] '>
+            <div className=' flex gap-[34px] uppercase manrope leading-[25px] font-bold tracking-[2px] text-[13px] '>
             <Link to='/'className=''>Home</Link>
             <Link to='/login'className=''>HEADPHONES</Link>
             <Link to='/login'className=' '>SPEAKERS</Link>
@@ -46,8 +46,8 @@ function App() {
             </div>
            
           </div>
-          <hr className=" border-[#FFFFFF] opacity-20 " />
-          
+          <hr className="w-[1110px] z-10 border-[#FFFFFF] opacity-20 " />
+          <img className='absolute m-auto inset-0 ' src='src\assets\home\desktop\image-hero.jpg'></img>
           
         </div>
        
