@@ -25,26 +25,28 @@ function App() {
   return (
     <div className='bg-gray-100 '>
         
-        <div className='bg-[#101010] h-[729px] px-[165px] py-[32px] gap-6 flex flex-col justify-between mb-9 text-neutral-700'>
-          <div className='flex'>
+        <div className=' bg-[#141414] h-[729px] px-[165px] pt-[32px] flex flex-col  text-[#FFFFFF]'>
+          <div className='flex justify-between items-center mb-[36px]'>
             <div>
-            audiophile
+            <img src='src\assets\shared\desktop\logo.svg'></img>
             </div>
-            <div>
-            <Link to='/'className='text-2xl uppercase font-bold'>Home</Link>
-            <Link to='/login'className='text-2xl uppercase font-bold'>log in</Link>
-            <Link to='/login'className='text-2xl uppercase font-bold'>log in</Link>
-            <Link to='/login'className='text-2xl uppercase font-bold'>log in</Link>
-            <Link to='/login'className='text-2xl uppercase font-bold'>log in</Link>
+            <div className='flex gap-[34px] uppercase manrope leading-[25px] font-bold tracking-[2px] text-[13px] '>
+            <Link to='/'className=''>Home</Link>
+            <Link to='/login'className=''>HEADPHONES</Link>
+            <Link to='/login'className=' '>SPEAKERS</Link>
+            <Link to='/login'className=' '>EARPHONES</Link>
+            
             </div>
 
             <div>
-              {!showModal && <button className=' bg-gray-800 text-white text-xs font-bold uppercase  hover:bg-gray-700 focus:outline-none focus:bg-gray-700'
-            onClick={toggle}>
-            Cart ({cartItems.length})</button>}
+              {!showModal && <button className='  text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700'
+            onClick={toggle}> <img src='src\assets\shared\desktop\icon-cart.svg'></img>
+            {/* Cart ({cartItems.length}) */}
+            </button>}
             </div>
+           
           </div>
-          <hr className="border-t-2 border-red-500 my-4" />
+          <hr className=" border-[#FFFFFF] opacity-20 " />
           
           
         </div>

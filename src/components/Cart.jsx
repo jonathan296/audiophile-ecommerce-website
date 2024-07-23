@@ -22,7 +22,8 @@ export default function Cart({ showModal, toggle }) {
 
   return (
     showModal && (
-      <div className="flex-col flex items-center fixed inset-0 left-1/4 bg-white dark:bg-black gap-8  p-10  text-black dark:text-white font-normal uppercase text-sm">
+      <div className="">
+        <div className="flex-col flex items-center fixed  top-[32px] right-[165px] w-[377px] h-[488px] bg-white p-10  text-black  font-normal uppercase text-sm">
         <h1 className="text-2xl font-bold">Cart</h1>
         <div className="absolute right-16 top-10">
           <button
@@ -95,6 +96,8 @@ export default function Cart({ showModal, toggle }) {
           </h1>
         )}
       </div>
+      </div>
+      
     )
   );
 }
