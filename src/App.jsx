@@ -22,7 +22,7 @@ function App() {
     <div className="manrope">
       <div className="bg-[#191919]">
         <header className="relative flex flex-col items-center  ">
-          <div className="h-[729px]  pt-[32px] lg:px-0 px-6 flex flex-col max-w-[1440px] w-full m-auto text-[#FFFFFF]">
+          <div className="h-[729px]  pt-[32px] lg:px-0 px-6 flex flex-col max-w-[1110px] w-full m-auto text-[#FFFFFF]">
             <div className="z-10 flex  justify-between items-center mb-[36px]">
               <div>
                 <img src="src\assets\shared\desktop\logo.svg"></img>
