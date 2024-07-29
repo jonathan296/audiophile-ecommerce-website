@@ -22,7 +22,7 @@ function App() {
     <div className="manrope">
       <div className="bg-[#191919]">
         <header className="relative flex flex-col items-center  ">
-          <div className="h-[729px]  pt-[32px] lg:px-0 px-6 flex flex-col max-w-[1110px] w-full m-auto text-[#FFFFFF]">
+          <div className="h-[729px]  pt-[32px] lg:px-0 px-6 flex flex-col max-w-[1440px] w-full m-auto text-[#FFFFFF]">
             <div className="z-10 flex  justify-between items-center mb-[36px]">
               <div>
                 <img src="src\assets\shared\desktop\logo.svg"></img>
@@ -59,21 +59,21 @@ function App() {
             </div>
             <hr className="z-10  border-[#FFFFFF] opacity-20 " />
             <div className="z-10">
-          <div className="flex flex-col gap-[24px] mb-[40px]">
-            <p className=" manrope mt-[128px] opacity-[49.64%] uppercase tracking-[10px] font-normal text-[14px]">
-              new product
-            </p>
-            <h1 className="text-[60px] font-bold w-[396px] leading-[58px]">
-              XX99 Mark II Headphones
-            </h1>
-            <p className="w-[349px] leading-[25px] text-[15px]">
-              Experience natural, lifelike audio and exceptional build quality
-              made for the passionate music enthusiast.
-            </p>
-          </div>
+              <div className="flex flex-col gap-[24px] mb-[40px]">
+                <p className=" manrope mt-[128px] opacity-[49.64%] uppercase tracking-[10px] font-normal text-[14px]">
+                  new product
+                </p>
+                <h1 className="text-[60px] font-bold w-[396px] leading-[58px]">
+                  XX99 Mark II Headphones
+                </h1>
+                <p className="w-[349px] leading-[25px] text-[15px]">
+                  Experience natural, lifelike audio and exceptional build
+                  quality made for the passionate music enthusiast.
+                </p>
+              </div>
 
-          <button className="default-button-1">see product</button>
-        </div>
+              <button className="default-button-1 uppercase">see product</button>
+            </div>
           </div>
           <img
             className=" absolute m-auto object-cover h-full inset-0 "
@@ -82,21 +82,15 @@ function App() {
         </header>
         <Cart showModal={showModal} toggle={toggle} />
       </div>
-      <section className="m-3">
-        <div className="flex gap-3 justify-center">
-          <div className="bg-slate-800 w-[350px] h-[204px]"> </div>
-          <div className="bg-slate-800 w-[350px] h-[204px]"> </div>
-          <div className="bg-slate-800 w-[350px] h-[204px]"> </div>
-        </div>
-      </section>
-      {/* <div>
+      
+      <div >
         <Routes>
           <Route path="/details/:id" element={<Details />} />
-          <Route path="/" element={<Products />} />
+          <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
         </Routes>
-      </div> */}
+      </div>
     </div>
   );
 }
