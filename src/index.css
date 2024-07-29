@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
 .index{
     background-color: #f3f4f6;
 }
@@ -11,4 +18,11 @@
   font-family: "Manrope", sans-serif;
   font-optical-sizing: auto;
   
+  
+}
+
+.default-button-1{
+  background-color: #D87D4A;
+  height: 48px;
+  width: 160px;
 }
